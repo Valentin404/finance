@@ -1,0 +1,39 @@
+.mW {
+    max-width: 1000px;
+    width: 100%;
+}
+
+
+
+button, a {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 9px;
+    margin: 0 4px;
+    justify-content: center;
+}
+
+.error {
+    background-color: rgba(255, 0, 0, 0.662) !important;
+}
+.center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 5px;
+}
+
+button:hover, a:hover {
+    background: #343434 ;
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    button {
+        font-size: 12px;
+        
+    }
+}

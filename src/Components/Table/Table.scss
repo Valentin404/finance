@@ -1,0 +1,168 @@
+.G_C_table {
+  display: flex;
+  justify-content: center;
+  .C_table {
+    width: 100%;
+    button,
+    select {
+      background: transparent;
+    }
+    .sortButton {
+      margin: 0;
+      position: relative;
+      z-index: 2;
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .categoryHover {
+      position: absolute;
+      width: 120px;
+      background-color: #444444;
+      background-color: rgb(118, 118, 118);
+      top: 100%;
+      left: 20px;
+      display: none;
+    }
+    .sortButton:hover .categoryHover {
+      display: block !important;
+    }
+    .categoryHover * {
+      width: 100%;
+      margin: 0;
+      color: white;
+    }
+    .categoryHover *:hover {
+      background: #343434 !important;
+    }
+
+    .elem_description  {
+        min-width: 110px;
+    }
+    .main .remove {
+        color: transparent;
+        background-color: transparent;
+    }
+    .remove {
+        background-color: red;
+        height: 20px;
+        width: 20px;
+        border-radius:4px;
+        margin: 0;
+        
+    }
+  }
+}
+
+/* Sort */
+.C_sort_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.C_sort_date {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.sort_date {
+  display: flex;
+  align-items: center;
+}
+.sort_date * {
+  margin-left: 10px;
+}
+.sort_date input[type="date"] {
+  cursor: pointer;
+  padding: 2px 4px;
+  border: 2px solid transparent;
+}
+
+/* table */
+.C_for_table {
+  overflow-x: auto;
+
+}
+.C_for_table::-webkit-scrollbar {
+  height: 0;
+}
+
+.table {
+  min-width: 560px;
+}
+.table_elem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border-bottom-width: 2px ;
+  border-bottom-style: solid ;
+  // border-bottom: 2px solid rgba(255, 255, 255, 0.442);
+}
+.table_elem.main {
+  background-color: #6f6e6e;
+  border-bottom: none;
+}
+
+.elem {
+  width: 80px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .elem_type , .elem_currency,  .elem_amount, .elem_description, .elem_date  */
+.elem_amount {
+  width: 120px;
+}
+
+.elem_type {
+  justify-content: flex-start;
+  margin-left: 5px;
+  // !!!!!
+}
+.elem_date {
+  width: 90px;
+}
+
+
+
+.elem_amount.red {
+  color: red;
+}
+.elem_amount.green {
+  color: green;
+}
+.line {
+  width: 2px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.442);
+}
+
+.C_addMore {
+  display: flex;
+  margin: 30px;
+  justify-content: center;
+}
+.addMore {
+  padding: 5px;
+  background-color: #1f1f1f;
+}
+
+
+.inputTable {
+  padding: 4px 5px;
+}
+
+@media screen and (max-width:650px) {
+.C_table {
+  // margin-top: 100px;
+}
+  .inputTable {
+    // width: 100px;
+    max-width: 150px;
+    width: 100%;
+  }
+
+  }
